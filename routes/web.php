@@ -1,25 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AccountController;
-use App\Http\Controllers\CategoriesController;
-use App\Http\Controllers\AttachedController;
-use App\Http\Controllers\SummaryController;
-use App\Http\Controllers\TotalController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\DetalleController;
-use App\Http\Controllers\UsersController;
-use App\Http\Controllers\TransferController;
-use App\Http\Controllers\BitacoraController;
-use App\Http\Controllers\PdfController;
-use App\Http\Controllers\ToursController;
-use App\Http\Controllers\FuturoController;
-use App\Http\Controllers\PermissionsController;
-use App\Http\Controllers\BalanceController;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\Auth\ForgotPasswordController;
-use App\Http\Controllers\Auth\ResetPasswordController;
 use Illuminate\Support\Facades\Auth;
 
 /*

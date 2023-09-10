@@ -14,7 +14,7 @@ class balanceController extends Controller
 {
 
     public function getAmount($in=0){
-//        dd($in);
+
         return $in;
     }
 

@@ -1,13 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\Models\Summary;
-
 use App\Models\Account;
 use App\Models\Categories;
-use App\Models\Attached;
 use App\Models\Settings;
 use Illuminate\Support\Facades\Auth;
 use Datetime;
@@ -200,13 +196,7 @@ class totalController extends Controller
 
         }
       
-               $account2 = $account2->first();
-
-             
-
-          
-
-             
+               $account2 = $account2->first();            
       
  return view('vendor.adminlte.montos.montos',['summary'=>$account,'divisa'=>$divisa,'totalfinal'=>$totalfinal,'futuro'=>$futuro,'liquidez'=>$account2]);
 

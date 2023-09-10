@@ -282,14 +282,7 @@ $url="?start=".$startf."&finish=".$finishf."&dias=".$diasf."&tipo=". $tipof."&cu
 															  </div>
 															</div>
 		     
-         
-
-
 											</div>
-
-
-
-
 
 											<div class="col-sm-2 add_top_1">
 															<select class="form-control" name="categoria" id="categorie_select">

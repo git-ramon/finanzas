@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\View;
 use Illuminate\Http\Request;
 use App\Models\Summary;
 use App\Models\Account;
 use App\Models\Categories;
 use App\Models\Attached;
 use App\Models\Settings;
-use App\Models\Bitacora;
-use App\Models\Transfer;
 use App\Models\Attributes;
 use App\Models\Tours;
 use App\Models\Attributestours;
-use Illuminate\Support\Facades\Auth;
 use Datetime;
+
 
 class pdfController extends Controller
 {
@@ -25,8 +25,8 @@ class pdfController extends Controller
         $data = $this->getData();
         $date = date('Y-m-d');
         $invoice = "2222";
-        $view =  \View::make('vendor.adminlte.pdf.invoice', compact('data', 'date', 'invoice'))->render();
-        $pdf = \App::make('dompdf.wrapper');
+        $view =  View::make('vendor.adminlte.pdf.invoice', compact('data', 'date', 'invoice'))->render();
+        $pdf = App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
         return $pdf->stream('invoice');
     }
@@ -243,11 +243,11 @@ class pdfController extends Controller
         }
         $hoy2=date('Y-m-d H:m:s',strtotime('today'));
 
-           $view =  \View::make('vendor.adminlte.pdf.invoice', compact('divisa', 'summary', 'account', 'categories','totalfinal','totalfinaliva','totalfinalivae','hoy2','atributos','atributostours','tours'))->render();
+           $view = View::make('vendor.adminlte.pdf.invoice', compact('divisa', 'summary', 'account', 'categories','totalfinal','totalfinaliva','totalfinalivae','hoy2','atributos','atributostours','tours'))->render();
 
 
 
-        $pdf = \App::make('dompdf.wrapper');
+        $pdf = App::make('dompdf.wrapper');
 
         $pdf->loadHTML($view);
 
@@ -451,10 +451,10 @@ class pdfController extends Controller
         }
         $hoy2=date('Y-m-d H:m:s',strtotime('today'));
 
-           $view =  \View::make('vendor.adminlte.pdf.invoice', compact('divisa', 'summary', 'account', 'categories','totalfinal','totalfinaliva','totalfinalivae','hoy2','atributos','atributostours','tours'))->render();
+           $view = View::make('vendor.adminlte.pdf.invoice', compact('divisa', 'summary', 'account', 'categories','totalfinal','totalfinaliva','totalfinalivae','hoy2','atributos','atributostours','tours'))->render();
 
 
-        $pdf = \App::make('dompdf.wrapper');
+        $pdf = App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
         return $pdf->stream('invoice');
         }else{

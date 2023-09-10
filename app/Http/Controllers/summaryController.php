@@ -12,10 +12,8 @@ use App\Models\Bitacora;
 use App\Models\Transfer;
 use App\Models\Attributes;
 use App\Models\Tours;
-use App\Models\Attributestours;
 use App\Models\Permissions;
 use Datetime;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 
 

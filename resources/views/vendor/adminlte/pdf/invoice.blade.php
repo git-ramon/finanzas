@@ -90,7 +90,7 @@ if (isset($_GET['id_attr_tours'])) {
 <body>
 <header class="clearfix">
     <div id="logo">
-        <img src="https://www.heavydeveloper.me/front/images/site/mano.png">
+        <img src="https://img.freepik.com/vetores-premium/modelo-de-arquivo-em-formato-pdf-para-seu-projeto_97886-11001.jpg" width="500px" height="150px">    
     </div>
     <div class="div1">Reporte <span
                 style="float: right; font-size: 22px">Balance: {{ number_format($totalfinal, 2, '.', ',') }} {{$divisa->value}}</span>

@@ -132,11 +132,3 @@ class attachedController extends Controller
     }
 }
 
-
-
-	    // $response = array(
-     //            'status' => 'guardo',
-     //            'fecha' => $hoy,
-     //            'archivo' => $request->path,
-     //            );
-	    //  return response()->json($response);
